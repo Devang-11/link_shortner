@@ -2,7 +2,7 @@
 <html lang="en">  
 <head>  
     <meta charset="UTF-8">  
-    <title>login</title>  
+    <title>index</title>  
     {% load static %}  
     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">  
     <script src="{% static '/jquery-3.5.1.js' %}"></script>
