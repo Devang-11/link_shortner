@@ -93,7 +93,7 @@ h5{
           },
           success:function(json){
               document.getElementById("myform").reset();
-              $(".post").append('<div class="row my-1"><div class="col-md-4 bg-light"><h5 id="og_link">'+json.og_url+'</h5></div><div class="col-md-4 bg-light"><h5 id="select_txt">localhost:8000/'+json.short_url+'</h5></div><div class="col-md-4 my-1"><button type="button" class="btn btn-light btn-md-lg btn-block" onclick="copy_data(select_txt)">Copy</button></div></div>');
+              $(".post").append('<div class="row my-1"><div class="col-md-4 bg-light"><h5 id="og_link">'+json.og_url+'</h5></div><div class="col-md-4 bg-light"><h5 id="select_txt">https://sh-link.herokuapp.com/'+json.short_url+'</h5></div><div class="col-md-4 my-1"><button type="button" class="btn btn-light btn-md-lg btn-block" onclick="copy_data(select_txt)">Copy</button></div></div>');
               
           },
           error : function(xhr,errmsg,err) {
