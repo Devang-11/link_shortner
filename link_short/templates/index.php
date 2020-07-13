@@ -1,7 +1,9 @@
 <!DOCTYPE html>  
 <html lang="en">  
-<head>  
-    <meta charset="UTF-8">  
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
     <title>index</title>  
     {% load static %}  
     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">  
@@ -55,11 +57,10 @@ h5{
 </head>  
 <body>
 <div id="particles-js"></div>
-
-    <div class="container">
-	      <div class="row">
-		        		<div class="col-xs-12 col-sm-12 col-md-8 col-lg-6  column col-sm-offset-0 col-md-offset-2 col-lg-offset-3">
-          	<form method="post" id="myform" class=" col-10 px-2 py-2">
+    <div class="container-fluid row h-100 col-12 justify-content-center align-items-center">
+	      
+		        		<div class="col-xs-12 col-sm-12 col-md-10">
+      	<form method="post" id="myform" class=" col-12 px-2 py-2">
       		<div class="text col-12 text-center mb-5">Short Url</div>
  {% csrf_token %}
   
@@ -69,24 +70,24 @@ h5{
   <button type="submit" id="submit" class="btn btn-primary">Submit</button>  
             </div>
           </div>
-            <p class="text-light">https://www.domain.com <-- link format</p>
+            <p class="d-flex text-light">https://www.domain.com <-- link format</p>
 
 <div class="container-fluid col-12 px-2 py-2">
   <div class="text-light post">
   </div>
 </div>
 
-</form>
-		</div>
+</form>	</div>
 		
-	</div>
-</div>
-         
 
         
+    <div class="container-fluid px-3 py-3">
+      <div class="row">
+      
+</div>
+</div>
 
-
-
+</div>
 <script>
 
 
